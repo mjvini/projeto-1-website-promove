@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Ingressos</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&display=swap">
     <style>
@@ -35,6 +35,20 @@
             margin-top: 70px; /* Ajuste conforme necessário para evitar sobreposição */
         }
 
+        .ingressos-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .ingressos-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .ingressos-description {
+            font-size: 18px;
+        }
+
         /* Adicione outros estilos necessários */
     </style>
 </head>
@@ -58,9 +72,40 @@
         </div>
         <div class="container">
             <h1 style="text-align: center;">Ingressos</h1>
-            <!-- Conteúdo da página -->
+            <div class="categoria-ingressos">
+              <h2 class="ingressos-title">Categoria Anel Único</h2>
+              <p class="ingressos-description">
+                  Ingresso para todas as palestras e sessões especiais. Inclui um almoço temático inspirado em "O Senhor dos Anéis".
+              </p>
+              <p class="ingressos-description">
+                  Preço: $100
+              </p>
+          </div>
+
+          <div class="categoria-ingressos">
+              <h2 class="ingressos-title">Categoria Terra-média</h2>
+              <p class="ingressos-description">
+                  Ingresso para todas as palestras e sessões especiais. Não inclui o almoço temático.
+              </p>
+              <p class="ingressos-description">
+                  Preço: $80
+              </p>
+          </div>
+
+          <div class="categoria-ingressos">
+              <h2 class="ingressos-title">Categoria Hobbit</h2>
+              <p class="ingressos-description">
+                  Ingresso para participar de uma única palestra ou sessão à sua escolha.
+              </p>
+              <p class="ingressos-description">
+                  Preço: $30 por sessão
+              </p>
+          </div>
+      </div>
+  </main>
+</body>
+</html>
         </div>
     </main>
 </body>
 </html>
-
