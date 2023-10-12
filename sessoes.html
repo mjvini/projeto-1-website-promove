@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&display=swap">
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            background-color: #333; /* Adicione sua cor de fundo desejada */
+            width: 100%;
+            z-index: 2;
+        }
+
+        .nav-links {
+            list-style: none; /* Remova os marcadores de lista */
+            padding: 0;
+            display: flex; /* Exibir elementos em linha (horizontal) */
+            justify-content: center; /* Centralizar links horizontalmente */
+        }
+
+        .nav-links li {
+            margin-right: 20px; /* Espaço entre os links, ajuste conforme necessário */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white; /* Cor dos links, ajuste conforme necessário */
+        }
+
+        .main-content {
+            margin-top: 70px; /* Ajuste conforme necessário para evitar sobreposição */
+        }
+
+        /* Adicione outros estilos necessários */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="logo.png" alt="Logo Instituto de Computação">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="palestrantes.html">Palestrantes</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="sessoes.html">Sessões</a></li>
+                <li><a href="ingressos.html">Ingressos</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="flexbox-capa">
+            <img class="capa1" src="capa-index.jpg" alt="Capa Senhor dos Anéis">
+        </div>
+        <div class="container">
+            <h1 style="text-align: center;">Sessões</h1>
+            <!-- Conteúdo da página -->
+        </div>
+    </main>
+</body>
+</html>
+
