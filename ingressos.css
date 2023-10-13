@@ -45,9 +45,12 @@ header{
 
 
 .corpo-pagina{
+    flex-grow: 1;
+    padding: 0 10px; 
+    overflow-y: auto; 
     display: flex;
     flex-direction: row;
-    background-color: var(--color-primary);
+    background-color: #091C26;
 
 }
 
@@ -156,6 +159,7 @@ header{
 /* Telas menores*/
 /* Telas menores*/
 @media only screen and (max-width: 768px){
+    
 
     .flex-botao{
         display: flex;
@@ -334,25 +338,25 @@ footer{
 
 
 
-.botao{
+.botao-1{
     background-color: black;
     color:#FFFFFF;
     font-size:20px;
     border-radius: 5px;
-    padding: 20px 20px; /* Espaçamento interno do botão */
+    padding: 20px 20px; 
     border: none;
     margin-top: 80px;
     cursor: pointer;
 }
 
 
-.botao:hover{
+.botao-1:hover{
     background-color: #3c7c4f;
     transition: .5s;
     
 }
 
-.botao:hover a {
+.botao-1:hover a {
     color: #10490b;
 }
 
