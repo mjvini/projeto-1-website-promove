@@ -3,25 +3,53 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" type="text/css" href="fale-conosco.css">
   </head>
-  <body>
-    <main>
-      <div class="flexbox-capa">
-        <img class="capa1"src="capa-index.jpg" alt="Capa senhor dos anéis">
-      </div>
-      <h1>Fale conosco</h1>  
-    </main>
-    <nav>
-      
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/index.html" > Home</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/palestrantes.html" >Palestrantes</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/agenda.html">Agenda</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/sessoes.html">Sessões</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/ingressos.html">Ingressos</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/fale-conosco.html">Fale conosco</a>
-    
+
+  <body class="container">
+  
+    <nav class="navbar ">
+      <img class="logo" src="logo.png" alt="Logo Instituto de computação">
+        <ul class="nav-links">
+          <li><a class="nav-item" href="index.html" > Home</a></li>
+          <li><a class="nav-item" href="palestrantes.html" >Palestrantes</a></li>
+          <li><a class="nav-item" href="agenda.html">Agenda</a></li>
+          <li><a class="nav-item" href="sessoes.html">Sessões</a></li>
+          <li><a class="nav-item" href="ingressos.html">Ingressos</a></li>
+          <li><a class="nav-item" href="fale-conosco.html">Fale conosco</a></li>
+        </ul>      
     </nav>
-  </body>
+  
+
+
+  <main class="main-grid">
+    <div class="formulario">
+      <h1 class="titulo">Fale Conosco</h1>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+
+  <footer class="">
+    <div class="footer-col">
+        <p>© Semana da Computação 2024 - Instituto de Computação</p>
+    </div>
+    <div class="footer-col">
+        <p>Desenvolvido por: Time Vermelho</p>   
+    </div>
+  </footer>
+</body>
 </html>
+

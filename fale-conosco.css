@@ -137,43 +137,18 @@ footer{
     background-color: var(--color-primary);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "area1 area2";
-}
-
-.area1{
-    grid-area: area1;
-    color: var(--color-on-text-primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
     
 }
 
-.area2{
-    grid-area: area2;
-    color: #FFFFFF;
+
+.titulo{
     font-family: 'Aclonica', sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-size: 25px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
-    text-align:center;
-    font-size:50px;
-    justify-content: space-evenly;
-    
-}
-
-
-.botao{
-    background-color: black;
-    color:#FFFFFF;
-    font-size:20px;
-
-}
-
-.ingresso-pic{
-    width: 50%;
-    height: 50%;
-    
 }
