@@ -1,8 +1,18 @@
-function toggleNavbar() {
-    var navLinks = document.getElementById("navLinks");
-    if (navLinks.style.display === "block") {
-      navLinks.style.display = "none";
-    } else {
-      navLinks.style.display = "block";
-    }
-  }
+
+/*Controla o botão*/
+document.addEventListener("DOMContentLoaded", function () {
+  var botaoAberto = document.getElementById("aberto");
+  var botaoFechado = document.getElementById("fechado");
+  var navbar = document.querySelector(".navbar");
+  var logo = document.querySelector(".logo");
+
+  botaoAberto.addEventListener("click", function () {
+    navbar.classList.toggle("visivel");
+    logo.classList.add("sem-logo");
+  });
+
+  botaoFechado.addEventListener("click", function () {
+    navbar.classList.remove("visivel"); 
+    logo.style.display = "block";
+  });
+});
