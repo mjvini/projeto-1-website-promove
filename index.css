@@ -8,7 +8,19 @@ html {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    /*display: flex;
+    flex-direction: column;
+    min-height: 100vh;*/
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+}
+
 :root{
     --color-primary: #091C26;
     --color-on-text-primary: #FFFFFF;
@@ -19,14 +31,63 @@ html {
 header{
     width: 100%;
     height: 85px;
-    /*flex-shrink: 1;*/
+    /*flex-shrink: 0;*/
     background: #041715;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px; 
-     
+    padding: 0 10px;
+    
 }
+.corpo-pagina {
+    flex-grow: 1;
+    padding: 0 10px; 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    background-color: #091C26;
+}
+.imagem-texto{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.paragrafo-1, .paragrafo-2{
+    margin: auto;
+    text-align: justify;
+    color: #ffffff;
+    margin-left: 20px;
+}
+.capa-home{
+    max-width: 50%;
+}
+.Titulo, h3{
+    margin-top: 10px;
+    font-family: 'Aclonica', sans-serif;
+    color: #1ca032;
+    flex-grow: 1; 
+    margin-left: 20px;
+}
+
+footer{
+    padding: 25px; /* Adicione o espaçamento desejado ao rodapé. */
+    background-color: #041715;
+    color: #FFFFFF;
+    text-align: center;
+}
+/*
+main{
+    padding: 0 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+footer{
+    padding: 20px;
+    flex-shrink: 0;
+}
+*/
 .logo{
     width: 175px;
     vertical-align: middle;
@@ -49,7 +110,7 @@ header{
 }
 
 .nav-item{
-    color: rgba(50, 159, 11, 0.78);
+    color: rgba(255, 255, 255, 0.78);
     font-family: 'Aclonica', sans-serif;
     text-align: center;
     font-size: 12px;
@@ -82,6 +143,21 @@ header{
 
 /* Telas menores*/
 @media only screen and (max-width: 768px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem-texto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .paragrafo-1{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
     .flex-botao{
         display: flex;
         flex-direction: column;
@@ -171,7 +247,7 @@ header{
     .nav-item{
         display: flex;
         flex-direction: column;
-        color: rgba(50, 159, 11, 0.78);
+        color: rgba(255, 255, 255, 0.78);
         font-family: 'Aclonica', sans-serif;
         text-align: center;
         font-size: 12px;
@@ -215,7 +291,7 @@ footer{
     color: var(--color-on-text-primary);
     font-family:'Inter', sans-serif;
     display: flex;
-    padding: 50px;
+    padding: 25px;
     align-items: center;
     justify-content: space-between;
 }
@@ -224,3 +300,5 @@ footer{
     text-align: center;
     width: 40%;
 }
+
+

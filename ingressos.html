@@ -4,28 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="ingressos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&display=swap">
   </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo"></div>
-          
-          <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/index.html" > Home</a>
-          <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/palestrantes.html" >Palestrantes</a>
-          <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/agenda.html">Agenda</a>
-          <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/sessoes.html">Sessões</a>
-          <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/ingressos.html">Ingressos</a>
-          <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/fale-conosco.html">Fale conosco</a>
-        
-    </nav>
-    </header>
-    <main>
-      <div class="flexbox-capa">
-        <img class="capa1"src="capa-index.jpg" alt="Capa senhor dos anéis">
-      </div>
-      <h1>Ingressos</h1>  
-    </main>
+  <body class="container">
+  
+      <nav class="navbar ">
+        <img class="logo" src="logo.png" alt="Logo Instituto de computação">
+          <ul class="nav-links">
+            <li><a class="nav-item" href="index.html" > Home</a></li>
+            <li><a class="nav-item" href="palestrantes.html" >Palestrantes</a></li>
+            <li><a class="nav-item" href="agenda.html">Agenda</a></li>
+            <li><a class="nav-item" href="sessoes.html">Sessões</a></li>
+            <li><a class="nav-item" href="ingressos.html">Ingressos</a></li>
+            <li><a class="nav-item" href="fale-conosco.html">Fale conosco</a></li>
+          </ul>      
+      </nav>
     
+
+
+    <main class="main-grid">
+      <div class="area1">
+      <img class="ingresso-pic" src="ingresso.png" alt="foto de ingresso">
+      <p>O ingresso é valido para qualquer dia e qualquer sessão, bastando apenas apresentá-lo ao entrar no evento.</p>
+    </div>
+
+      <div class="area2">
+        <p>Não perca a chance de participar deste evento único que combina o melhor da computação com a magia do Senhor dos Anéis. Garanta seu ingresso agora e prepare-se para uma experiência inesquecível na Semana da Computação UFRJ 2024!
+        </p>
+
+        <button class="botao">GARANTA SEU INGRESSO</button>
+
+      </div>
+    </main>
+
+
+    <footer class="">
+      <div class="footer-col">
+          <p>© Semana da Computação 2024 - Instituto de Computação</p>
+      </div>
+      <div class="footer-col">
+          <p>Desenvolvido por: Time Vermelho</p>   
+      </div>
+    </footer>
   </body>
+
+  
+  
 </html>
