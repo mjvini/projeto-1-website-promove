@@ -321,3 +321,93 @@ body{
 .cards:last-child{
     margin-bottom: 20px;
 }
+
+/*contato*/
+
+.contato-title{
+    text-align: center;
+    margin: 40px;
+    color:var(--color-on-text-primary);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.card-contato{
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-header);
+    border-radius: 4% ;
+}
+
+.container-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-family:'Inter', sans-serif;
+    color: var(--color-on-text-primary);
+}
+
+.contato-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contato-form_title{
+    text-align: center;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-label{
+    margin-bottom: 10px;
+}
+
+.form-input{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 4%;
+}
+
+.form-input:hover{
+    border: 4px solid #3c7c4f;
+}
+
+.form-textarea{
+    font-family: 'inter', sans-serif;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 4%;
+}
+
+.form-textarea:hover{
+    border: 4px solid #3c7c4f;
+}
+
+.form-button{
+    margin-top: 10px;
+    background-color: black;
+    color:#FFFFFF;
+    font-size:20px;
+    border-radius: 5px;
+    padding: 20px 20px; /* Espaçamento interno do botão */
+    border: none;
+    cursor: pointer;
+}
+
+.form-button:hover{
+    background-color: #3c7c4f;
+    transition: .5s;
+}
