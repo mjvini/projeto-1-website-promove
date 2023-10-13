@@ -1,18 +1,20 @@
-
-/*Controla o botão*/
 document.addEventListener("DOMContentLoaded", function () {
-  var botaoAberto = document.getElementById("aberto");
-  var botaoFechado = document.getElementById("fechado");
+  var botao = document.getElementById("botao-navbar");
   var navbar = document.querySelector(".navbar");
   var logo = document.querySelector(".logo");
+  var corpoPagina = document.querySelector(".corpo-pagina");
 
-  botaoAberto.addEventListener("click", function () {
-    navbar.classList.toggle("visivel");
-    logo.classList.add("sem-logo");
-  });
-
-  botaoFechado.addEventListener("click", function () {
-    navbar.classList.remove("visivel"); 
-    logo.style.display = "block";
+  botao.addEventListener("click", function () {
+    if (navbar.classList.contains("visivel")) {
+      // Se a classe "visivel" estiver presente no navbar, fecha o navbar, mostra o conteúdo e mostra o corpo da página.
+      navbar.classList.remove("visivel");
+      logo.style.display = "block";
+      corpoPagina.classList.remove("visivel");
+    } else {
+      // Caso contrário, abre o navbar, oculta o conteúdo e oculta o corpo da página.
+      navbar.classList.add("visivel");
+      logo.classList.add("sem-logo");
+      corpoPagina.classList.add("visivel");
+    }
   });
 });
