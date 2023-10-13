@@ -49,7 +49,7 @@ header{
 }
 
 .nav-item{
-    color: rgba(50, 159, 11, 0.78);
+    color: rgba(255, 255, 255, 0.78);
     font-family: 'Aclonica', sans-serif;
     text-align: center;
     font-size: 12px;
@@ -110,10 +110,7 @@ header{
         top: 10px;
     }
     
-    .botao-navbar.clicked{
-        background-color: #4f47c5;
-        color: #fff;
-    }
+    
 
     .logo{
         display: inline-block;
@@ -171,7 +168,7 @@ header{
     .nav-item{
         display: flex;
         flex-direction: column;
-        color: rgba(50, 159, 11, 0.78);
+        color: rgba(255, 255, 255, 0.78);
         font-family: 'Aclonica', sans-serif;
         text-align: center;
         font-size: 12px;
