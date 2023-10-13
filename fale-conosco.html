@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" type="text/css" href="fale-conosco.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&display=swap">
   </head>
   <body>
-    <main>
-      <div class="flexbox-capa">
-        <img class="capa1"src="capa-index.jpg" alt="Capa senhor dos anéis">
+    <script src="index.js"></script>
+    <header>
+      <img class="logo"src="logo.png" alt="Logo Instituto de computação">
+      <div class="flex-botao">
+        <button id="botao-navbar" class="botao">&#9776;</button>
       </div>
-      <h1>Fale conosco</h1>  
-    </main>
-    <nav>
-      
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/index.html" > Home</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/palestrantes.html" >Palestrantes</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/agenda.html">Agenda</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/sessoes.html">Sessões</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/ingressos.html">Ingressos</a>
-        <a href="/home/devmob/Documentos/excluir/projeto-1-website-promove/fale-conosco.html">Fale conosco</a>
-    
+      <nav class="navbar">
+        <ul class="nav-links">
+            <li><a class="nav-item" href="/home/devmob/Documentos/excluir/projeto-1-website-promove/index.html" > Home</a></li>
+            <li><a class="nav-item" href="/home/devmob/Documentos/excluir/projeto-1-website-promove/palestrantes.html" >Palestrantes</a></li>
+            <li><a class="nav-item" href="/home/devmob/Documentos/excluir/projeto-1-website-promove/agenda.html">Agenda</a></li>
+            <li><a class="nav-item" href="/home/devmob/Documentos/excluir/projeto-1-website-promove/sessoes.html">Sessões</a></li>
+            <li><a class="nav-item" href="/home/devmob/Documentos/excluir/projeto-1-website-promove/ingressos.html">Ingressos</a></li>
+            <li><a class="nav-item" href="/home/devmob/Documentos/excluir/projeto-1-website-promove/fale-conosco.html">Fale conosco</a></li>
+          </ul>      
     </nav>
+      
+    </header>
+    <div class="corpo-pagina">
+      <main>
+        <div class="contato-title">
+            <h1>Contato</h1>
+        </div>
+        <div class="container-card">
+            <div class="card-contato">
+                <form action="" method="post" class="contato-form">
+                    <p class="contato-form_title"> Envie sua mensagem</p>
+                    <label class="form-label">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" class="form-input">
+                    <label class="form-label">Email</label>
+                    <input type="text" name="nome" placeholder="Digite seu email" class="form-input">
+                    <label class="form-label">Mensagem</label>
+                    <textarea type="text" rows="7" name="mensagem" placeholder="Digite sua mensagem" class="form-textarea"></textarea>
+                    <button type="submit" class="form-button">Enviar</button>
+                </form>
+            </div>
+        </div>
+      </main>
+
+
+      <footer>
+        <div class="footer-col">
+            <p>© Semana da Computação 2024 - Instituto de Computação</p>
+        </div>
+        <div class="footer-col">
+            <p>Desenvolvido por: Time Vermelho</p>   
+        </div>
+      </footer>
+    </div>
   </body>
+
+  
+  
 </html>

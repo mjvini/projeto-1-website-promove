@@ -2,38 +2,17 @@
 html {
     box-sizing: border-box;
 }
-/*
-*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    /*display: flex;
-    flex-direction: column;
-    min-height: 100vh;*/
-
 * {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    
-}
-
 :root{
     --color-primary: #091C26;
     --color-on-text-primary: #FFFFFF;
     --color-header: #041715;
 }
-
-
 header{
     width: 100%;
     height: 85px;
@@ -52,36 +31,6 @@ header{
     display: flex;
     flex-direction: column;
     background-color: #091C26;
-}
-.imagem-texto{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-}
-.paragrafo-1, .paragrafo-2{
-    margin: auto;
-    text-align: justify;
-    color: #ffffff;
-    margin-left: 20px;
-}
-.capa-home{
-    max-width: 50%;
-    margin-left: 20px;
-}
-.Titulo, h3{
-    margin-top: 10px;
-    font-family: 'Aclonica', sans-serif;
-    color: #1ca032;
-    flex-grow: 1; 
-    margin-left: 20px;
-}
-
-footer{
-    padding: 25px; /* Adicione o espaçamento desejado ao rodapé. */
-    background-color: #041715;
-    color: #FFFFFF;
-    text-align: center;
 }
 
 .logo{
@@ -137,6 +86,35 @@ footer{
     display: none;
 }
 
+
+.main-content {
+    margin-top: 70px; /* Ajuste conforme necessário para evitar sobreposição */
+}
+h1{
+    color: #086d08;
+    font-family: 'Aclonica', sans-serif;
+}
+/* Estilo da tabela */
+table {
+    width: 80%;
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    border-collapse: collapse;
+    color: #fff;
+    margin-top: 20px; /* Espaço superior entre a tabela e o conteúdo anterior */
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para destacar os dias */
+.day-header {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
 /* Telas menores*/
 @media only screen and (max-width: 768px){
     .container {
@@ -180,7 +158,6 @@ footer{
         position: absolute;
         right: 10px;
         top: 10px;
-        
     }
     /*
     .botao-navbar.clicked{
@@ -220,7 +197,16 @@ footer{
         bottom: 0; 
     }
     
-     
+    
+    /*
+    #botao-navbar {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    */  
     .navbar.visivel{
         display: flex;
     }
@@ -288,5 +274,3 @@ footer{
     text-align: center;
     width: 40%;
 }
-
-
