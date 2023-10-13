@@ -22,10 +22,14 @@ html {
 
 
 header{
-    
+    width: 100%;
+    height: 85px;
     /*flex-shrink: 0;*/
     background: #041715;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
     
 }
 
@@ -186,7 +190,7 @@ header{
         right: 10px;
         top: 10px;
     }
-    
+
     /*
     .botao-navbar.clicked{
         background-color: #4f47c5;
