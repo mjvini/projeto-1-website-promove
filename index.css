@@ -2,7 +2,7 @@
 html {
     box-sizing: border-box;
 }
-
+/*
 *, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
@@ -11,6 +11,12 @@ html {
     /*display: flex;
     flex-direction: column;
     min-height: 100vh;*/
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 .container{
     display: flex;
@@ -61,6 +67,7 @@ header{
 }
 .capa-home{
     max-width: 50%;
+    margin-left: 20px;
 }
 .Titulo, h3{
     margin-top: 10px;
@@ -185,12 +192,12 @@ footer{
         right: 10px;
         top: 10px;
     }
-    
+    /*
     .botao-navbar.clicked{
         background-color: #4f47c5;
         color: #fff;
     }
-
+    */
     .logo{
         display: inline-block;
         transition: opacity 0.3s;
